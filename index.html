@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clínica OdontoViva</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="logo-container">
+        <p class="logo-nome">Clínica OdontoViva</p>
+      </div>
+      <nav class="menu">
+        <a href="home.html" class="link-menu ativo">Home</a>
+        <a href="servicos.html" class="link-menu">Serviços</a>
+        <a href="contato.html" class="link-menu">Contato</a>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="banner">
+        <img src="image/banner.jpg" alt="Ferramentas de Dentista" class="banner-img"/>
+        <div class="banner-text">
+          <h1>Bem-vindo à Clínica OdontoViva</h1>
+          <p>Transformando sorrisos com cuidado e excelência.</p>
+        </div>
+      </section>
+    
+      <section class="servicos">
+        <h2 class="servicos-titulo">Nossos Serviços</h2>
+        <div class="servicos-lista">
+          <div class="service-card">
+            <img src="image/pexels-cottonbro-6528868.jpg" alt="Odontologia Geral" />
+            <h3>Odontologia Geral</h3>
+            <p>Prevenção, limpeza, tratamento de cáries e restaurações para um sorriso saudável.</p>
+          </div>
+          <div class="service-card">
+            <img src="image/pexels-cottonbro-6529108.jpg" alt="Ortodontia" />
+            <h3>Ortodontia</h3>
+            <p>Correção do alinhamento dos dentes com aparelhos e alinhadores invisíveis.</p>
+          </div>
+          <div class="service-card">
+            <img src="image/pexels-cottonbro-6529113.jpg" alt="Implantes Dentários" />
+            <h3>Implantes Dentários</h3>
+            <p>Reposição de dentes perdidos para melhorar a estética e funcionalidade do sorriso.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="contato">
+        <h2>Formulário de Contato</h2>
+        <form action="/enviar" method="POST" class="contact-form">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Seu e-mail" />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem" rows="5"></textarea>
+
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </section>
+    </main>
