@@ -7,28 +7,42 @@
     <title>Clínica OdontoViva</title>
   </head>
   <body>
+    <main>
     <header class="cabecalho">
       <div class="logo-container">
         <p class="logo-nome">Clínica OdontoViva</p>
       </div>
       <nav class="menu">
-        <a href="home.html" class="link-menu ativo">Home</a>
-        <a href="servicos.html" class="link-menu">Serviços</a>
-        <a href="contato.html" class="link-menu">Contato</a>
+        <a href="#home" class="link-menu ativo">Home</a>
+        <a href="#servicos" class="link-menu">Serviços</a>
+        <a href="#contato" class="link-menu">Contato</a>
       </nav>
     </header>
     
-    <main>
-      <section class="banner">
-        <img src="image/banner.jpg" alt="Ferramentas de Dentista" class="banner-img"/>
+      <section id="home" class="banner">
+        <img src="image/banner.jpg" alt="Ferramentas de Dentista" class="banner-img" />
         <div class="banner-text">
           <h1>Bem-vindo à Clínica OdontoViva</h1>
           <p>Transformando sorrisos com cuidado e excelência.</p>
         </div>
       </section>
-    
-      <section class="servicos">
+      
+      <div id="servicos" class="text-content">
         <h2 class="servicos-titulo">Nossos Serviços</h2>
+        <div class="service-card1">
+          <img src="image/pexels-tima-miroshnichenko-5355835.jpg" alt="Odontologia Geral" />
+          
+          <div class="paragrafo-primeiro">
+            <p>
+              - Odontologia Geral<br><br><br>
+              - Ortodontia<br><br><br>
+              - Implantes Dentários
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <section class="servicos">
         <div class="servicos-lista">
           <div class="service-card">
             <img src="image/pexels-cottonbro-6528868.jpg" alt="Odontologia Geral" />
@@ -47,8 +61,8 @@
           </div>
         </div>
       </section>
-    
-      <section class="contato">
+      
+      <section id="contato" class="contato">
         <h2>Formulário de Contato</h2>
         <form action="/enviar" method="POST" class="contact-form">
           <label for="nome">Nome</label>
@@ -64,3 +78,6 @@
         </form>
       </section>
     </main>
+    <script src="app.js"></script>
+  </body>
+</html>
