@@ -10,9 +10,11 @@
 //let nome = "Guilherme"
 //let idade = 21
 //console.log(nome, idade)
-
-let nomeCompleto = ""
-nomeCompleto = prompt("Informe seu nome completo")
+function fnSaudacao(){
+    let nomeCompleto = ""
+    nomeCompleto = prompt("Informe seu nome completo")
+    alert("Seja bem vindo(a) "+nomeCompleto+" ao meu site!")
+}
 
 function fnTrocarCorDeFundo(){
     let cor = prompt("Informe uma cor: \n 1 azul \n 2 vermelho \n 3 preto \n 4 verde \n 5 laranja \n 6 branco")
@@ -43,4 +45,3 @@ function fnTrocarCorDeFundo(){
     document.body.style.backgroundColor = corDeFundo
 }
 
-fnTrocarCorDeFundo()
