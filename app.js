@@ -45,3 +45,14 @@ function fnTrocarCorDeFundo(){
     document.body.style.backgroundColor = corDeFundo
 }
 
+function FnMostrarHoraAtual(){
+    const hora = new Date().toLocaleTimeString()
+
+    alert("A Hora é: "+hora);
+}
+
+function fnTrocarTitulo(){
+    let nomeSite = prompt("Escreva o nome do site")
+
+    document.getElementById("titulo").innerText=nomeSite
+}
