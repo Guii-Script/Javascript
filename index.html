@@ -21,6 +21,8 @@
           <button type="button" onclick="fnSaudacao()">Seja Bem-vindo</button>
           <button type="button" onclick="FnMostrarHoraAtual()">Mostrar a HORA</button>
           <button type="button" onclick="fnTrocarTitulo()">Mudar titulo</button>
+          <img src="image/image.png" alt="Brasil" height="30">
+          <img src="image/bandeira_americana_bb.webp" alt="Estados Unidos" height="30">
         </div>
       </nav>
     </header>
@@ -68,19 +70,20 @@
         </div>
       </section>
       
-      <section id="contato" class="contato">
+      <section class="contato">
         <h2>Formulário de Contato</h2>
-        <form action="/enviar" method="POST" class="contact-form">
+        <form class="contact-form">
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="Seu e-mail" />
+          <input type="text" id="email" name="email" required placeholder="Seu e-mail" />
 
           <label for="mensagem">Mensagem</label>
           <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem" rows="5"></textarea>
 
-          <button type="submit" class="submit-btn">Enviar</button>
+          <button class="submit-btn" onclick="fnRegistrarContato()">Enviar</button>
+          <p id="informacoes"></p>
         </form>
       </section>
     </main>
