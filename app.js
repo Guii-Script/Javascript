@@ -62,7 +62,7 @@ function fnRegistrarContato(){
     let email = document.getElementById("email").value
     let mensagem = document.getElementById("mensagem").value
     let informacoesCompleta = nome + " - " + email + "<br>" + mensagem
-    document.getElementById("informacoes").innerText = informacoesCompleta
+    document.getElementById("informacoes").innerHTML = informacoesCompleta
 
     document.getElementById("nome").value = ""
     document.getElementById("email").value = ""
